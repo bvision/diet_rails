@@ -1,5 +1,3 @@
-class MyApp < Rails::Application
-  routes.append do
-    get '(:action)', :controller => :application, :defaults => {:action => :index}
-  end
+MyApp.routes.draw do
+  get '(:action)', :controller => :application, :defaults => {:action => :index}
 end
