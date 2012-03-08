@@ -1,9 +1,4 @@
 class MyApp < Rails::Application
-
-  routes.append do
-    get '(:action)', :controller => :application, :defaults => {:action => :index}
-  end
-
   config.active_support.deprecation = :log
   config.cache_classes = true
   config.middleware.delete "Rack::Lock"
